@@ -16,13 +16,14 @@ EXE_INC = \
     -I$(FOAM_SRC)/dynamicFvMesh/lnInclude \
     -I$(FOAM_SOLVERS)/incompressible/pimpleFoam/overPimpleDyMFoam \
     -I$(FOAM_SRC)/overset/lnInclude \
+    -I$(FOAM_APP)/solvers/multiphase/interFoam \
     -DOFVERSION=2106 \
     -DEXTBRANCH=0 \
     -I$(WAVES_SRC)/waves2Foam/lnInclude \
     -I$(WAVES_SRC)/waves2FoamSamplingNew/lnInclude \
     -I$(WAVES_GSL_INCLUDE) 
 
-EXE_LIBS = \
+EXE_LIBS = \s
     -lfiniteVolume \
     -lfvOptions \
     -lsampling \
