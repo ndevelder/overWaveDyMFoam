@@ -23,7 +23,7 @@ EXE_INC = \
     -I$(WAVES_SRC)/waves2FoamSamplingNew/lnInclude \
     -I$(WAVES_GSL_INCLUDE) 
 
-EXE_LIBS = \s
+EXE_LIBS = \
     -lfiniteVolume \
     -lfvOptions \
     -lsampling \
